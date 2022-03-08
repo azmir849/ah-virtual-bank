@@ -52,3 +52,15 @@ export const MobileIcon = styled.div`
     cursor: pointer;
   }
 `
+
+export const NavMenu = styled.ul`
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+
+    @media and screen(max-width: 768px){
+        display: none
+    }
+`
