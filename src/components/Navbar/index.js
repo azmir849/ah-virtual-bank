@@ -13,7 +13,7 @@ const Navbar = () => {
                </MobileIcon>
                <NavMenu>
                    <NavItem>
-                       <NavLinks to='about'></NavLinks>
+                       <NavLinks to='about'>About</NavLinks>
                    </NavItem>
                </NavMenu>
            </NavbarContainer>
