@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElement";
-import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from "./HeroElements";
+import {
+  ArrowForward,
+  ArrowRight,
+  HeroBg,
+  HeroBtnWrapper,
+  HeroContainer,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  VideoBg,
+} from "./HeroElements";
 
 const HeroSection = () => {
-    const [hover,setHover] = useState(false);
+  const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover)
-    }
+  const onHover = () => {
+    setHover(!hover);
+  };
   return (
     <>
       <HeroContainer>
@@ -22,7 +32,12 @@ const HeroSection = () => {
             your next payment.
           </HeroP>
           <HeroBtnWrapper>
-            <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+            <Button to='signup' 
+            onMouseEnter={onHover} 
+            onMouseLeave={onHover}
+            primary = 'true'
+            dark='true'
+            >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
