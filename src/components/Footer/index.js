@@ -22,7 +22,12 @@ import {
   WebsiteRights,
 } from "./FooterElements";
 
+import { animateScroll as scroll } from "react-scroll";
+
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+      }
   return (
     <FooterConatiner>
       <FooterWrap>
@@ -63,7 +68,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>Virtual Bank</SocialLogo>
+            <SocialLogo to='/' onClick={toggleHome}>Virtual Bank</SocialLogo>
             <WebsiteRights>
               virtual bank ©{new Date().getFullYear()} All rights reserved
             </WebsiteRights>
